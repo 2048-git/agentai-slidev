@@ -440,6 +440,66 @@
   font-size: 1.3rem;
 }
 
+.openclaw-intro-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.65rem;
+  padding: 0.45rem 0.8rem 0.45rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.openclaw-intro-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+}
+
+.openclaw-intro-label {
+  color: var(--accent-deep);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.openclaw-list li {
+  margin-bottom: 0.55rem;
+  line-height: 1.26;
+  font-size: 1.04rem;
+}
+
+.openclaw-intro-layout {
+  align-items: start;
+  gap: 2rem;
+}
+
+.openclaw-intro-panel {
+  padding-top: 1.45rem !important;
+  padding-bottom: 1.55rem !important;
+}
+
+.openclaw-intro-panel h1 {
+  font-size: 3.45rem;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.8rem !important;
+}
+
+.openclaw-demo-panel {
+  padding: 1.15rem !important;
+  justify-content: flex-start;
+}
+
+.openclaw-demo-panel .official-demo-image {
+  width: min(14.2rem, 100%);
+}
+
+.openclaw-demo-panel .image-caption {
+  margin-top: 0.6rem;
+  font-size: 0.84rem;
+}
+
 .risk-slide,
 .summary-slide {
   display: flex;

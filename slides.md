@@ -38,11 +38,11 @@ mdc: true
 
 <!--
 안녕하세요, 소프트웨어학부 22학번 강지웅입니다.
-오늘 저는 에이전트 AI와 OpenClaw에 대해 발표하겠습니다.
+오늘 저는 에이전트 AI와 오픈클로에 대해 발표하겠습니다.
 요즘 AI라고 하면 단순히 답만 해주는 챗봇보다,
 우리가 흔히 쓰는 클로드 코드나 코덱스 같은 코딩 에이전트처럼 실제 작업을 수행해 주는 AI를 먼저 떠올리실 겁니다.
 오늘 발표에서는 이 흐름을 아우르는 에이전트 AI의 개념과,
-이를 아주 직관적으로 보여주는 OpenClaw 사례를 간단히 살펴보겠습니다.
+이를 아주 직관적으로 보여주는 오픈클로 사례를 간단히 살펴보겠습니다.
 -->
 
 ---
@@ -50,8 +50,8 @@ class: split-slide
 transition: slide-left
 ---
 
-<div class="split-layout">
-  <section>
+<div class="split-layout openclaw-intro-layout">
+  <section class="openclaw-intro-panel">
     <h1>에이전트 AI란?</h1>
     <p class="lead-kicker">목표를 받으면</p>
     <p class="lead-flow">계획 → 도구 사용 → 실행</p>
@@ -125,7 +125,7 @@ transition: slide-left
 </div>
 
 <!--
-예를 들어 사용자가 OpenClaw 공식 자료를 찾고,
+예를 들어 사용자가 오픈클로 공식 자료를 찾고,
 핵심 기능을 정리해서 발표 초안 파일까지 만들어달라고 요청했다고 해보겠습니다.
 이 경우에는 단순히 설명하는 것보다,
 먼저 필요한 자료를 찾고, 내용을 선별하고, 정리한 뒤,
@@ -179,26 +179,32 @@ transition: slide-left
 
 <div class="split-layout">
   <section>
-    <h1>왜 OpenClaw인가?</h1>
-    <ul class="plain-list">
-      <li>오픈소스 기반의 개인형 에이전트 AI 플랫폼</li>
-      <li>직접 운영하고 실험해볼 수 있는 구조</li>
-      <li>채팅 요청을 행동으로 연결하는 흐름이 선명함</li>
+    <div class="openclaw-intro-mark">
+      <img class="openclaw-intro-icon" src="./openclaw.png" alt="" />
+      <span class="openclaw-intro-label">OpenClaw</span>
+    </div>
+    <h1>OpenClaw란?</h1>
+    <ul class="plain-list openclaw-list">
+      <li>Peter Steinberger와 커뮤니티가 만든 오픈소스 개인형 AI 비서</li>
+      <li>개발자와 파워 유저가 직접 운영하고 실험하기 좋은 구조</li>
+      <li>메신저 기반으로 검색, 일정, 이메일, 코딩 작업까지 연결 가능</li>
     </ul>
   </section>
 
-  <section class="media-panel">
+  <section class="media-panel openclaw-demo-panel">
     <img class="official-demo-image" src="./openclaw-whatsapp-official.jpg" alt="OpenClaw 공식 데모 이미지" />
     <p class="image-caption">OpenClaw 공식 데모 이미지</p>
   </section>
 </div>
 
 <!--
-에이전트 AI의 사례로 OpenClaw를 보면,
-에이전트 AI가 실제로 어떻게 움직이는지 아주 구체적으로 볼 수 있습니다.
-중요한 건 AI 모델 자체가 똑똑한 데서 끝나는 게 아니라,
-사용자의 요청을 받고 어떤 구조를 통해 실제 행동으로 이어지는가 하는 점입니다.
-즉 OpenClaw는 에이전트 AI가 행동으로 연결되는 과정을 보여주는 사례라고 볼 수 있습니다.
+에이전트 AI 사례 중 오픈클로를 간단히 소개해드리겠습니다.
+오픈클로는 피터 슈타인베르거와 커뮤니티가 만든 오픈소스 개인형 AI 비서입니다.
+주로 개발자나 파워 유저처럼 자기 환경을 직접 통제하고 싶은 사람들을 위한 도구라고 볼 수 있습니다.
+왓츠앱이나 디스코드 같은 메신저에서 요청을 보내면,
+자료 탐색, 일정 관리, 이메일 처리, 코딩 작업 같은 일을 연결해서 수행할 수 있습니다.
+또 셀프호스팅이 가능하고 자유도가 높아서 빠르게 화제가 되었고,
+어제 봤을 때 깃허브 저장소도 약 34만 스타를 기록하고 있었습니다.
 -->
 
 ---
@@ -229,7 +235,7 @@ transition: slide-left
 </div>
 
 <!--
-OpenClaw의 내부를 보면 에이전트 AI가 왜 단순 모델과 다른지 더 명확해집니다.
+오픈클로의 내부를 보면 에이전트 AI가 왜 단순 모델과 다른지 더 명확해집니다.
 이 시스템은 크게 도구, 스킬, 플러그인으로 구성되어 있습니다.
 생각만 하는 언어 모델 하나로는 부족하기 때문에 행동을 위한 부품들이 필요한 거죠.
 도구는 검색이나 터미널 실행 같은 실제 기능이고,
